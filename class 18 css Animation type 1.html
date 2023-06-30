@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p{
+            height:100px;
+            width:200px;
+            transition:width 2s,height 2s;
+            transition-delay:3s;
+            transition-timing-function: ease-out;
+        }
+        .p:hover{
+            background-color: teal;
+            color:white;
+            width:300px;
+            height:200px;
+        }
+        /* animation */
+        .div{
+            width:500px;
+            height:70px;
+            background-color: teal;
+            animation-name:colorchange;
+            animation-duration:0.8s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            border-radius:25px;
+        }
+        .p1{
+            padding:15px;
+            margin-left:170px;
+            margin-top:10px;
+        }
+        @keyframes colorchange{
+            from{
+                background-color: black;
+                color:red
+            }
+            to{
+                background-color:green;
+            color:yellow;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Using CSS Animation</h1>
+    <fieldset>
+        
+        <legend>transition</legend>
+   
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptates amet vel? Cum animi, nam est saepe ratione unde laborum.</p>
+</fieldset>
+<fieldset>
+    <legend><h1>Animation</h1></legend>
+    <h3>Type 1</h3>
+    <div class="div">
+        <p class="p1">SURAJ DUBEY</p>
+    </div>
+    
+</fieldset>
+</body>
+</html>
